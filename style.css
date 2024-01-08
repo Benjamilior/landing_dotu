@@ -65,44 +65,84 @@ body{
     font-size: 20px;
 }
 /* PARTE MORADAD */
-
-.h1{
-    
-    position:static;
-    height: 1500px;
+.grande{
     background: linear-gradient(to bottom, var(--morado-logo),var(--morado--normal));
     width: 100%;
+    height: 1500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contienetodo{
+    
+    position: absolute;
+    
+    top: 20%;
+    margin: 30px;
+     
+    
+    
+}
+
+.paraelh1,
+.paraelh2,
+.paraelboton,
+.paraelmockup {
+  
+    margin-bottom: 50px;
+}
+
+
+.contienetodo h1,h2{
+
     text-align: center;
-    color: var(--anaranjado);
-    padding: 300px;
-   
+    
 }
-.particles-js{
+.paraelboton{
     width: 100%;
-    height: 300px;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
+.paraelmockup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    background-color: #2F81CF;
+}
 
 .partners {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: auto;
+    width: 100%;
+    position: relative;
   }
   
   .partner {
     width: 25%;
-    margin: 0 10px;
+    
+    text-align: center;
   }
   
   .partner img {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
-
+#uai{
+    
+}
 .info-gigante{
     height: 1000px;
     background-color: orange;
@@ -130,6 +170,13 @@ body{
     box-shadow: #f7ad4d;
     border: solid #f7ad4d 2px;
   }
+  .subscribe-btn {
+    
+}
+
+.subscribe-btn:hover {
+    border: 3px solid var(--white);
+}
  
 
   
