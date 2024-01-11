@@ -1,3 +1,4 @@
+  
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +49,7 @@ body{
 .imagen{
     width: 40%;
     height: 40%;
+    overflow-y: hidden;
 }
 
 .logomorado{
@@ -82,13 +84,17 @@ body{
     justify-content: center;
 }
 
+
 .contienetodo{
     
     position: absolute;
     
     top: 20%;
     margin: 30px;
-     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     
 }
@@ -101,11 +107,21 @@ body{
     margin-bottom: 50px;
 }
 
+.paraelh2{
+    width: 70%;
+    text-align: center;
+    color: #fff;
+}
 
 .contienetodo h1,h2{
 
     text-align: center;
     
+}
+
+.paraelh1{
+    color: var(--anaranjado);
+    font-size: 40px;
 }
 .paraelboton{
     width: 100%;
@@ -113,6 +129,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .paraelmockup{
@@ -121,8 +138,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 20px;
-    background-color: #2F81CF;
+    height: 500px;
+    
+    
 }
 
 .partners {
@@ -153,7 +171,7 @@ body{
 
 .button {
     font-family: var(--monserrat);
-    color: var(--morado-logo);
+    color: #fff;
     font-size: 25px;
     padding: 10px;
     text-decoration: none;
@@ -164,9 +182,10 @@ body{
     -webkit-box-shadow: 0px 1px 3px #FF9100;
     -moz-box-shadow: 0px 1px 3px #FF9100;
     box-shadow: 0px 1px 3px #FF9100;
-    text-shadow: 1px 1px 3px #070269;
+    text-shadow: 1px 1px 1px #fff;
     border: solid #FF9100 2px;
     background: #FF9100;
+    
   }
   .button:hover {
 
@@ -226,13 +245,72 @@ body{
 }
 
 /* Parte de la info gigante */
+@media only screen and (max-width: 592px) {
+    .info-gigante {
+        position: relative;
+        height: 1500px;
+        box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.2);
+    }
+    
+    .contenedorinfogrande {
+        display: flex;
+        flex-direction: column; /* Alineará los elementos en columna */
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        position: relative;
+    }
+    
+    .derecho {
+        order: 2; /* Cambia el orden en el flujo del documento */
+        width: 20%;
+        height: 30%;
+        flex: 1;
+        
+        position: relative; /* Asegura que z-index funcione correctamente */
+        z-index: 1;
+    }
+    
+    .izquierdo {
+        order: 1; /* Cambia el orden en el flujo del documento */
+        width: 20%;
+        height: 25%;
 
+        position: relative;
+        z-index: 2; /* Valor superior para que quede sobre el div derecho */
+    }
+    
+    .atras{
+        /* background-color: pink; */
+        z-index: 1;
+        width: 100%;
+    
+        height: 90%;
+        position: absolute;
+        background-color: #00171F;
+        /* From https://css.glass */
+        background: rgba(42, 5, 104, 0.13);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2.6px);
+        -webkit-backdrop-filter: blur(2.6px);
+        border: 1px solid rgba(42, 5, 104, 0.09);
+        /* display: none; */
+        
+        
+    }
+    .caja1,.caja2,.caja3{
+        width: 100%;
+        height: 100%;
+        
+        margin: 3px;
+}
 
-
+}
 .info-gigante{
     position: relative;
     height: 1500px;
-    width: ;
+    /* width: ; */
    /* margin: 30px; */
     display: flex;
     flex-direction: column;
@@ -278,18 +356,37 @@ body{
 }
 .dentrodelizquierdo{
     position: absolute;
-    
+    text-align: justify;
+    color: var(--morado--normal);
     top: 25%;
-    width: 70%;
+    width: 85%;
+    
+}
+.dentrodelizquierdo {
+    margin-top: 20px; /* Ajusta el valor según la cantidad de espacio que desees arriba del contenido */
+    margin-bottom: 20px; /* Ajusta el valor según la cantidad de espacio que desees debajo del contenido */
+}
+
+/* También puedes aplicar un margen inferior al botón si deseas más separación */
+.botoncitoseccion1 {
+    margin-top: 20px; /* Ajusta el valor según la cantidad de espacio que desees arriba del botón */
 }
 
 
 .dentrodelizquierdo h2{
     text-align: left;
+    font-size: 35px;
+    color: var(--anaranjado);
+    
+}
+
+.dentrodelizquierdo p{
+    text-align: left;
+    
 }
 
 .derecho{
-    width: 50%;
+    width: 40%;
     height: 100%;
     flex:1;
     z-index: 2;
@@ -300,17 +397,35 @@ body{
     justify-content: center;
 }
 
+.numberdentro{
+    width: 75%;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--anaranjado);
+}
+.textodentro{
+    width: 50%;
+    text-align: justify;
+
+    
+}
+.oli{
+    margin: 5px;
+}
 .caja1,.caja2,.caja3{
     width: 100%;
     height: 24.3%;
     
     margin: 3px;
+    position: relative;
     
 }
 
 .paracajas{
-    display: flex;
-    
+    /* display: flex; */
+    margin: 5px;
+    position: relative;
+ 
 }
 .botoncitoseccion1{
    
@@ -319,7 +434,7 @@ body{
     padding: 10px 20px;
     border-radius: 10px; /* Ajusta el radio según sea necesario */
     background-color: var(--morado--normal); /* Color verde */
-    color:var(--azul-marino);
+    color:#fff;
     text-decoration: none;
     font-size: 22px;
     cursor: pointer;
@@ -332,11 +447,26 @@ body{
     padding: 10px 20px;
     border-radius: 10px; /* Ajusta el radio según sea necesario */
     background-color: var(--morado--normal); /* Color verde */
-    color:var(--azul-marino);
+    color:#fff;
     text-decoration: none;
     font-size: 22px;
     cursor: pointer;
     font-weight: bold;
+}
+.botoncitoseccion2{
+    display: inline-block;
+    width: 60%;
+    padding: 10px 20px;
+    border-radius: 10px; /* Ajusta el radio según sea necesario */
+    background-color: var(--morado--normal); /* Color verde */
+    color:#fff;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.espaciado {
+    margin-bottom: 10px; /* Puedes ajustar el valor según la cantidad de espacio que desees */
 }
 
 
@@ -400,12 +530,22 @@ body{
     align-items: center;
     justify-content: center;
     margin: top 300px;
+    font-size: 30px;
+    color: var(--morado--normal);
     
     
 }
 
 .slide-content{
-    width: 80%;
+    width: 100%;
+}
+.vladitextos{
+    width: 70%;
+    height: 70%;
+}
+.vladitexto{
+    width: 90%;
+    height: 90%;
 }
 
 #slider {
@@ -568,7 +708,7 @@ body{
  #slide2:checked ~ #bullets label:nth-child(2),
  #slide3:checked ~ #bullets label:nth-child(3),
  #slide4:checked ~ #bullets label:nth-child(4) {
-    background: #444;
+    background: var(--morado-logo);
  }
  @media screen and (max-width: 900px) {
     #slide1:checked ~ #controls label:nth-child(2),
@@ -647,15 +787,16 @@ body{
 }
 h5{
     padding-top: 50px;
+    
 }
 .numbers h5{
     color: (black);
-    opacity: 0.8;
     text-align: center;
     width: 100%;
     /* margin-bottom: 20px; */
     /* height: 20px; */
-    font-size: 23px;
+    font-size: 35px;
+    color: var(--morado--normal);
     
 }
 .numbers p{
@@ -752,16 +893,19 @@ h5{
   }
   
   .left { text-align: center; }
-  .right { text-align: center; }
+  .right { text-align: center;}
 
 
 
 
 
     .form .titulo-form {
-        text-align: center;
+        text-align: left;
+        font-weight: bold;
+        font-size: 30px;
         margin-top: 20px;
-        color: aqua;
+        margin: 10px;
+        color: var(--morado-logo);
     }
 
     .form p {

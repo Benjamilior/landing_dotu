@@ -1,3 +1,21 @@
+document.addEventListener("scroll", function () {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+  document.getElementById('izquierdo').style.transform = 'translateY(' + scrollTop * 0.9 + 'px)';
+  document.getElementById('derecho').style.transform = 'translateY(' + scrollTop * 0.1 + 'px)';
+  document.getElementById('atras').style.transform = 'translateY(' + scrollTop * 0.1 + 'px)';
+  document.getElementById('imgiz').style.transform = 'translateY(' + scrollTop * 0.9 + 'px)';
+  document.getElementById('imgder').style.transform = 'translateY(' + scrollTop * 0.9 + 'px)';
+
+
+  // Puedes ajustar los valores multiplicadores según tus preferencias
+});
+
+
+
+
+
+
 particlesJS(
     {
       "particles": {
