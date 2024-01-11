@@ -162,7 +162,7 @@ body{
   }
   
   .partner img {
-    width: 50%;
+    width: 55%;
     height: auto;
   }
 #uai{
@@ -382,7 +382,7 @@ body{
 
 .dentrodelizquierdo p{
     text-align: left;
-    
+color: var(--azul-marino);    
 }
 
 .derecho{
@@ -406,6 +406,8 @@ body{
 .textodentro{
     width: 50%;
     text-align: justify;
+    
+    color: var(--azul-marino);
 
     
 }
@@ -808,7 +810,7 @@ h5{
     color: var(--morado--normal );
 }
 :root {
-    --widthnumbers: 300px;
+    --widthnumbers: 25%;
     
   }
 .flex-container .number1{
