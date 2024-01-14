@@ -362,9 +362,7 @@ body{
     width: 85%;
     
 }
-.dentrodelizquierdo h2{
-    text-align: center;
-}
+
 .dentrodelizquierdo {
     margin-top: 20px; /* Ajusta el valor según la cantidad de espacio que desees arriba del contenido */
     margin-bottom: 20px; /* Ajusta el valor según la cantidad de espacio que desees debajo del contenido */
@@ -385,7 +383,7 @@ body{
 }
 
 .dentrodelizquierdo p{
-    text-align: left;
+    text-align: justify;
 color: var(--azul-marino);    
 }
 
@@ -408,7 +406,7 @@ color: var(--azul-marino);
     color: var(--anaranjado);
 }
 .textodentro{
-    width: 60%;
+    width: 59%;
     text-align: justify;
     
     color: var(--azul-marino);
