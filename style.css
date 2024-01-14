@@ -251,35 +251,38 @@ body{
         height: 1500px;
         box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.2);
     }
-    
-    .contenedorinfogrande {
-        display: flex;
-        flex-direction: column; /* Alineará los elementos en columna */
-        width: 100%;
-        height: 100%;
-        margin-top: 30px;
-        position: relative;
-    }
-    
-    .derecho {
-        order: 2; /* Cambia el orden en el flujo del documento */
-        width: 20%;
-        height: 30%;
-        flex: 1;
+    .vladitextos{
+        width: 150%;
+        height: 150%;
         
-        position: relative; /* Asegura que z-index funcione correctamente */
-        z-index: 1;
+    }
+    .left{
+        font-size: 10px;
+    }
+   .left .titulo-form h7{
+    color: var(--anaranjado);
+   }
+    .letras a{
+        font-size: 10px;
+    }
+    .vladitexto{
+        width: 150%;
+        height: 150%;
+        
+    }
+    .numbers{
+        font-size: 10px;
     }
     
-    .izquierdo {
-        order: 1; /* Cambia el orden en el flujo del documento */
-        width: 20%;
-        height: 25%;
-
-        position: relative;
-        z-index: 2; /* Valor superior para que quede sobre el div derecho */
+    .contenedorinfogrande{
+        font-size: 10px;
     }
-    
+    .dentrodelizquierdo h2{
+        font-size: 5px;
+        text-align: left;
+        font-size: 35px;
+        color: #fff;
+    }
     .atras{
         /* background-color: pink; */
         z-index: 1;
@@ -306,7 +309,15 @@ body{
         margin: 3px;
 }
 
+    .slider{
+        width: 100%;
+        height: 100%;
+    }
+
 }
+
+
+
 .info-gigante{
     position: relative;
     height: 1500px;
@@ -377,7 +388,7 @@ body{
 
 .dentrodelizquierdo h2{
     text-align: left;
-    font-size: 35px;
+    font-size: 32px;
     color: var(--anaranjado);
     
 }
@@ -440,7 +451,7 @@ color: var(--azul-marino);
     background-color: var(--morado--normal); /* Color verde */
     color:#fff;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
     font-weight: bold;
 
@@ -719,7 +730,7 @@ color: var(--azul-marino);
  #slide4:checked ~ #bullets label:nth-child(4) {
     background: var(--morado-logo);
  }
- @media screen and (max-width: 900px) {
+ /* @media screen and (max-width: 900px) {
     #slide1:checked ~ #controls label:nth-child(2),
     #slide2:checked ~ #controls label:nth-child(1),
     #slide3:checked ~ #controls label:nth-child(3),
@@ -735,7 +746,7 @@ color: var(--azul-marino);
        margin: 0 auto;
     }
  }
-      
+       */
 
 
 
@@ -911,7 +922,7 @@ h5{
     .form .titulo-form {
         text-align: left;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 28px;
         margin-top: 20px;
         margin: 10px;
         color: var(--morado-logo);
