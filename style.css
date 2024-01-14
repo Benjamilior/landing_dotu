@@ -362,6 +362,9 @@ body{
     width: 85%;
     
 }
+.dentrodelizquierdo h2{
+    text-align: center;
+}
 .dentrodelizquierdo {
     margin-top: 20px; /* Ajusta el valor según la cantidad de espacio que desees arriba del contenido */
     margin-bottom: 20px; /* Ajusta el valor según la cantidad de espacio que desees debajo del contenido */
@@ -370,6 +373,7 @@ body{
 /* También puedes aplicar un margen inferior al botón si deseas más separación */
 .botoncitoseccion1 {
     margin-top: 20px; /* Ajusta el valor según la cantidad de espacio que desees arriba del botón */
+    text-align: center;
 }
 
 
@@ -404,7 +408,7 @@ color: var(--azul-marino);
     color: var(--anaranjado);
 }
 .textodentro{
-    width: 50%;
+    width: 60%;
     text-align: justify;
     
     color: var(--azul-marino);
@@ -454,6 +458,11 @@ color: var(--azul-marino);
     font-size: 22px;
     cursor: pointer;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+
 }
 .botoncitoseccion2{
     display: inline-block;
@@ -807,7 +816,7 @@ h5{
 
 .numbers h6{
     font-size: 25px;
-    color: var(--morado--normal );
+    color: var(--anaranjado );
 }
 :root {
     --widthnumbers: 25%;
@@ -982,6 +991,7 @@ h5{
         border: 1px solid var(--link-color);
         border-radius: 0.375rem;
         transition: all 0.2s ease-in-out;
+        margin-top: 10px ;
     }
     
     .subscribe-btn:hover {
@@ -1078,8 +1088,9 @@ h5{
     .other-columns h3 {
         color: var(--link-color);
         margin-bottom: 1rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-family: ui-monospace, monospace;
+        font-weight: bold;
     }
     
     .footer-logo svg {
